@@ -1,4 +1,4 @@
-git init - initialize repository in the current folder
+git init 		//initialize repository in the current folder
 
 git config --global user.name Simoroshka
 git config --global user.email "simoroshka@gmail.com"
@@ -11,5 +11,26 @@ git add directory/
 git add *.txt
 
 git commit -m 'add index.html'
+git commit -a -m 'modify index.html' 	//ass changes from all tracked files (doesn't add new files)
+git commit --amend -m "new message"		//add to the last commit
+
+git diff 		//show unstaged differences since last commit
+git diff --staged 	//view staged differences
+
+git reset HEAD filename 	//unstage changes
+git checkout -- filename 	//blow away all changes since last commit
+git reset --soft HEAD^		//undo last commit, move to staging
+git reset --hard HEAD^		//Undo last commit and all changes
+git reset --hard HEAD^^		//Undo last two commits and all changes
 
 git log
+
+git remote -v 	//show remote repositories
+git push -u origin master
+
+git remote add <name> <address> 	//add new remote
+git remove rm <name>			//remove the remote
+git push -u <name> <branch> 		//push the repo to the remote (first time)
+git push 				//after the previous one
+
+//DO NOT UNDO COMMITS LOCALLY AFTER PUSHING!!
