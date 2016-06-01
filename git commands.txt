@@ -1,0 +1,15 @@
+git init - initialize repository in the current folder
+
+git config --global user.name Simoroshka
+git config --global user.email "simoroshka@gmail.com"
+
+git status
+
+git add filename
+git add --all
+git add directory/
+git add *.txt
+
+git commit -m 'add index.html'
+
+git log
