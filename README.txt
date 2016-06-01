@@ -1,1 +1,1 @@
-A testing repository
+A testing repository.
