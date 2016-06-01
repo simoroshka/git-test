@@ -34,3 +34,24 @@ git push -u <name> <branch> 		//push the repo to the remote (first time)
 git push 				//after the previous one
 
 //DO NOT UNDO COMMITS LOCALLY AFTER PUSHING!!
+
+
+//****CLONING AND BRANCHING***//
+
+git clone <url> [<local folder name>]			//
+git branch <name>			//branching out to add a feature, for example
+git checkout <branch>			//move to the branch 
+git checkout -b <branch>			//create and move to the branch 
+git merge <branch>			//you need to be in the master
+git branch -d <branch>			//delete the branch
+
+Vi editor
+:wq - save and quit
+:q! - quit
+ESC - levae mode
+i - insert mode
+j - down
+k - up
+h - left
+l - right
+
